@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+    <title>V-GyM Diet Plan Guide</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="diet.css">
+</head>
+<body>
+<nav>
+    <img src="./img/l.png" alt="V-GyM Logo" width="120px">
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="bmi.html">BMI Calculator</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="about.html">About Us</a>
+    </div>
+</nav>
+
+
+    <div class="hero">
+        <h1>🥗 Your Complete Diet Plan Guide</h1>
+        <p>Transform your body with science-backed nutrition plans tailored to your fitness goals</p>
+    </div>
+
+    <div class="container">
+        <!-- Goal-Based Diet Plans -->
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">🎯</span>
+                <h2>Goal-Based Diet Plans</h2>
+            </div>
+            <p style="font-size: 1.1rem; color: #666; margin-bottom: 2rem;">Choose a diet plan that aligns with your fitness objectives</p>
+
+            <div class="diet-grid">
+                <div class="diet-card">
+                    <h3>🏋️ Muscle Building Diet</h3>
+                    <p><strong>Calories:</strong> 2800-3500/day</p>
+                    <p><strong>Protein:</strong> 1.6-2.2g per kg body weight</p>
+                    <p><strong>Focus:</strong> High protein, moderate carbs, healthy fats</p>
+                    <div class="meal-plan">
+                        <h4>Sample Day:</h4>
+                        <ul>
+                            <li>Breakfast: 4 eggs, oatmeal, banana</li>
+                            <li>Snack: Greek yogurt with nuts</li>
+                            <li>Lunch: Grilled chicken, brown rice, vegetables</li>
+                            <li>Pre-workout: Protein shake, apple</li>
+                            <li>Dinner: Salmon, sweet potato, broccoli</li>
+                            <li>Before bed: Cottage cheese</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="diet-card">
+                    <h3>🔥 Weight Loss Diet</h3>
+                    <p><strong>Calories:</strong> 1500-2000/day</p>
+                    <p><strong>Protein:</strong> 1.2-1.6g per kg body weight</p>
+                    <p><strong>Focus:</strong> High protein, low carb, calorie deficit</p><br><br>
+                    <div class="meal-plan">
+                        <h4>Sample Day:</h4>
+                        <ul>
+                            <li>Breakfast: Egg whites, spinach omelet</li>
+                            <li>Snack: Almonds (small portion)</li>
+                            <li>Lunch: Grilled fish, quinoa, mixed salad</li>
+                            <li>Snack: Apple with peanut butter</li>
+                            <li>Dinner: Chicken breast, steamed vegetables</li>
+                            <li>Evening: Herbal tea</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="diet-card">
+                    <h3>⚡ Athletic Performance Diet</h3>
+                    <p><strong>Calories:</strong> 2500-3000/day</p>
+                    <p><strong>Protein:</strong> 1.4-1.8g per kg body weight</p>
+                    <p><strong>Focus:</strong> Balanced macros, timing-focused</p>
+                    <div class="meal-plan">
+                        <h4>Sample Day:</h4>
+                        <ul>
+                            <li>Breakfast: Whole grain toast, eggs, berries</li>
+                            <li>Pre-workout: Banana, dates</li>
+                            <li>Lunch: Turkey, pasta, vegetables</li>
+                            <li>Post-workout: Protein shake, rice cakes</li>
+                            <li>Dinner: Lean beef, potatoes, greens</li>
+                            <li>Snack: Greek yogurt with honey</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Macronutrients Guide -->
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">📊</span>
+                <h2>Understanding Macronutrients</h2>
+            </div>
+            
+            <table class="nutrition-table">
+                <thead>
+                    <tr>
+                        <th>Nutrient</th>
+                        <th>Function</th>
+                        <th>Best Sources</th>
+                        <th>Daily Needs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Protein</strong></td>
+                        <td>Muscle building & repair</td>
+                        <td>Chicken, fish, eggs, legumes, tofu</td>
+                        <td>1.6-2.2g per kg</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Carbohydrates</strong></td>
+                        <td>Energy & performance</td>
+                        <td>Rice, oats, quinoa, fruits, vegetables</td>
+                        <td>3-5g per kg</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fats</strong></td>
+                        <td>Hormones & brain health</td>
+                        <td>Avocado, nuts, olive oil, fatty fish</td>
+                        <td>0.8-1g per kg</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Fiber</strong></td>
+                        <td>Digestion & satiety</td>
+                        <td>Vegetables, fruits, whole grains</td>
+                        <td>25-35g daily</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box" style="margin-top: 2rem;">
+                <h3>💡 Pro Tip: Meal Timing Matters</h3>
+                <p>Eat protein within 2 hours post-workout for optimal muscle recovery. Consume carbs before intense training for energy, and include healthy fats in every meal for sustained satiety and hormone production.</p>
+            </div>
+        </div>
+
+        <!-- Nutrition Tips -->
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">💪</span>
+                <h2>Essential Nutrition Tips</h2>
+            </div>
+
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">💧</div>
+                    <h3>Stay Hydrated</h3>
+                    <p>Drink 3-4 liters of water daily. Add 500ml per hour of training.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">🍽️</div>
+                    <h3>Meal Prep</h3>
+                    <p>Prepare meals in advance to stay consistent with your nutrition goals.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">⏰</div>
+                    <h3>Consistent Timing</h3>
+                    <p>Eat at regular intervals to maintain metabolism and energy levels.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">🥦</div>
+                    <h3>Colorful Plates</h3>
+                    <p>Include vegetables of different colors for varied micronutrients.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">😴</div>
+                    <h3>Quality Sleep</h3>
+                    <p>7-9 hours of sleep supports recovery and metabolism regulation.</p>
+                </div>
+
+                <div class="tip-card">
+                    <div class="tip-icon">📝</div>
+                    <h3>Track Progress</h3>
+                    <p>Log your meals and monitor how your body responds to changes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Supplement Guide -->
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">💊</span>
+                <h2>Supplement Recommendations (Optional)</h2>
+            </div>
+
+            <div class="diet-grid">
+                <div class="diet-card">
+                    <h3>Essential Supplements</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✓ <strong>Whey Protein:</strong> 25-30g post-workout</li>
+                        <li>✓ <strong>Creatine:</strong> 5g daily for strength</li>
+                        <li>✓ <strong>Omega-3:</strong> 1-2g for recovery</li>
+                        <li>✓ <strong>Multivitamin:</strong> Fill nutritional gaps</li>
+                    </ul>
+                </div>
+
+                <div class="diet-card">
+                    <h3>Performance Boosters</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✓ <strong>Pre-Workout:</strong> 30 min before training</li>
+                        <li>✓ <strong>BCAAs:</strong> During long workouts</li>
+                        <li>✓ <strong>Caffeine:</strong> 200mg for energy</li>
+                        <li>✓ <strong>Beta-Alanine:</strong> Reduce fatigue</li>
+                    </ul>
+                </div>
+
+                <div class="diet-card">
+                    <h3>Recovery Aids</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li>✓ <strong>Glutamine:</strong> Muscle recovery</li>
+                        <li>✓ <strong>Magnesium:</strong> Sleep & relaxation</li>
+                        <li>✓ <strong>Vitamin D:</strong> Bone & immune health</li>
+                        <li>✓ <strong>Zinc:</strong> Hormone production</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight-box">
+                <h3>⚠️ Important Note</h3>
+                <p>Supplements enhance a good diet but cannot replace whole foods. Always consult with a healthcare professional before starting any supplement regimen, especially if you have existing health conditions.</p>
+            </div>
+        </div>
+
+        <!-- Healthy Food Swaps -->
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">🔄</span>
+                <h2>Smart Food Swaps</h2>
+            </div>
+
+            <table class="nutrition-table">
+                <thead>
+                    <tr>
+                        <th>Instead Of...</th>
+                        <th>Try This...</th>
+                        <th>Why It's Better</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>White rice</td>
+                        <td>Brown rice / Quinoa</td>
+                        <td>More fiber, vitamins & minerals</td>
+                    </tr>
+                    <tr>
+                        <td>Regular pasta</td>
+                        <td>Whole wheat pasta</td>
+                        <td>Higher protein & fiber content</td>
+                    </tr>
+                    <tr>
+                        <td>Sugary cereals</td>
+                        <td>Oatmeal with berries</td>
+                        <td>Complex carbs, sustained energy</td>
+                    </tr>
+                    <tr>
+                        <td>Soda / Juice</td>
+                        <td>Water with lemon</td>
+                        <td>Zero calories, natural hydration</td>
+                    </tr>
+                    <tr>
+                        <td>Fried foods</td>
+                        <td>Grilled / Baked options</td>
+                        <td>Less fat, more nutrients retained</td>
+                    </tr>
+                    <tr>
+                        <td>Ice cream</td>
+                        <td>Greek yogurt with fruit</td>
+                        <td>High protein, probiotics</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>Ready to Transform Your Body?</h2>
+            <p style="font-size: 1.2rem; margin: 1rem 0;">Start your journey today with a personalized diet plan</p>
+            <a href="bmi.html" class="cta-button">Calculate Your BMI</a>
+        </div>
+
+        <!-- Weekly Meal Prep Guide -->
+        <div class="section">
+            <div class="section-header">
+                <span class="section-icon">📅</span>
+                <h2>Weekly Meal Prep Guide</h2>
+            </div>
+
+            <div class="highlight-box">
+                <h3>Sunday Prep Checklist</h3>
+                <p><strong>Proteins (Choose 2-3):</strong></p>
+                <ul>
+                    <li>Grill 1.5kg chicken breast</li>
+                    <li>Bake 1kg fish fillets</li>
+                    <li>Cook 500g lean ground turkey</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Carbs (Choose 2-3):</strong></p>
+                <ul>
+                    <li>Cook 2 cups brown rice</li>
+                    <li>Bake 5-6 sweet potatoes</li>
+                    <li>Prepare 2 cups quinoa</li>
+                </ul>
+                <p style="margin-top: 1rem;"><strong>Vegetables:</strong></p>
+                <ul>
+                    <li>Steam broccoli and asparagus</li>
+                    <li>Roast mixed vegetables</li>
+                    <li>Chop raw veggies for snacks</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 2rem; font-size: 1.1rem;">Store in portion-controlled containers. Refrigerate for 4-5 days or freeze extra portions. Better to have fresh.</p>
+        </div>
+    </div>
+
+        <!-- PDF Download Section -->
+        <div class="section" style="width: 50%;margin-left: auto; margin-right: auto;">
+            <div class="section-header">
+                <span class="section-icon">📄</span>
+                <h2>View Another Diet Guide</h2>
+            </div>
+            <div style="text-align: center;">
+                <p style="font-size: 1.1rem; margin-bottom: 2rem;">Get our comprehensive diet plan PDF with meal plans, recipes, and tracking sheets</p>
+                <button onclick="openPDFPopup()" class="cta-button" style="cursor: pointer; border: none;">
+                    📥 View Diet Guide PDF
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF Popup Modal -->
+    <div id="pdfModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 9999; overflow: auto;">
+        <div style="position: relative; width: 90%; max-width: 1200px; margin: 2rem auto; background: white; border-radius: 10px; padding: 1rem;">
+            <button onclick="closePDFPopup()" style="position: absolute; top: 10px; right: 10px; background: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 1.2rem; font-weight: bold; z-index: 10000;">✕ Close</button>
+            <iframe id="pdfViewer" src="" style="width: 100%; height: 80vh; border: none; margin-top: 3rem; border-radius: 5px;"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function openPDFPopup() {
+            // Replace 'your-diet-plan.pdf' with your actual PDF file name
+            document.getElementById('pdfViewer').src = 'dietguide.pdf';
+            document.getElementById('pdfModal').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        function closePDFPopup() {
+            document.getElementById('pdfModal').style.display = 'none';
+            document.getElementById('pdfViewer').src = ''; // Clear the iframe
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+
+        // Close popup when clicking outside the PDF viewer
+        document.getElementById('pdfModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePDFPopup();
+            }
+        });
+
+        // Close popup with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closePDFPopup();
+            }
+        });
+    </script>
+<script>
+function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+</script>
+
+    <footer>
+        <p>made with <span class="heart">&#10084;</span> for you by <a href="https://www.instagram.com/_vipul_3132_/">Vipul Patil</a></p>
+        <p>&copy; 2025-26 V-GyM. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

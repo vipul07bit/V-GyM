@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workouts by V-GyM</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="wrk.css">
+</head>
+<body>
+<nav>
+    <img src="./img/l.png" alt="V-GyM Logo" width="120px">
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="bmi.html">BMI Calculator</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="about.html">About Us</a>
+    </div>
+</nav>
+
+
+    <h1>Workouts by V-GyM Daywise</h1>
+
+    <div class="mon">
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="showDay('monday', this)">Mon</button>
+            <button class="tab-btn" onclick="showDay('tuesday', this)">Tue</button>
+            <button class="tab-btn" onclick="showDay('wednesday', this)">Wed</button>
+            <button class="tab-btn" onclick="showDay('thursday', this)">Thu</button>
+            <button class="tab-btn" onclick="showDay('friday', this)">Fri</button>
+            <button class="tab-btn" onclick="showDay('saturday', this)">Sat</button>
+            <button class="tab-btn" onclick="showDay('sunday', this)">Sun</button>
+        </div>
+
+        <!-- Monday Content -->
+        <div id="monday" class="workout-content active">
+            <h2>Monday - Chest + Triceps (Push Focus)</h2>
+            <h3>CHEST🔥</h3>
+            <div class="card">
+                <h3>1️⃣ Barbell Bench Press</h3>
+                <img src="https://training.fit/wp-content/uploads/2018/11/bankdruecken-flachbank-langhantel.png" alt="Barbell Bench Press">
+                <p>Sets: 4 | Reps: 8-12<br>
+                Pure strength + size builder. Hits entire chest (King of chest exercises)</p>
+            </div>
+            <div class="card">
+                <h3>2️⃣ Incline Dumbbell Press</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-incline-hammer-press.jpg" alt="Incline Dumbbell Press">
+                <p>Sets: 3 | Reps: 10-12<br>
+                Builds upper chest → gives that aesthetic round look. Dumbbells give better stretch</p>
+            </div>
+            <div class="card">
+                <h3>3️⃣ Chest Dips (Weighted if possible)</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/weighted-tricep-dips.jpg" alt="Chest Dips">
+                <p>Sets: 3 | Reps: 8-12<br>
+                Explodes lower & mid chest. Also hits triceps a bit. Very underrated but super effective</p>
+            </div>
+            <div class="card">
+                <h3>4️⃣ Dumbbell Chest Fly</h3>
+                <img src="https://kinxlearning.com/cdn/shop/files/exercise-37_1000x.jpg?v=1613157925" alt="Dumbbell Chest Fly">
+                <p>Sets: 2 | Reps: 10-15<br>
+                Gives wide chest look. Opens chest muscles properly</p>
+            </div>
+            <h3>TRICEPS🔥</h3>
+            <div class="card">
+                <h3>1️⃣ Tricep Rope Pushdown</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/cable-pushdown.jpg" alt="Tricep Rope Pushdown">
+                <p>Sets: 3 | Reps: 10-15<br>
+                Perfect for beginners. Great pump. Easy to go heavy</p>
+            </div>
+            <div class="card">
+                <h3>2️⃣ Skull Crushers</h3>
+                <img src="https://www.fitfatherproject.com/wp-content/uploads/2019/08/Skull-Crusher-exercise-long-image.jpg" alt="Skull Crushers">
+                <p>Sets: 3 | Reps: 8-12<br>
+                Best for long-head triceps (biggest part). Helps arms look thick</p>
+            </div>
+            <div class="card">
+                <h3>3️⃣ Dips (Tricep focused, upright position)</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/bench-dip-on-floor.jpg" alt="Dips Tricep focused">
+                <p>Sets: 3 | Reps: 8-12<br>
+                Build strong, thick triceps. Also improves bench press strength</p>
+            </div>
+            <div class="card">
+                <h3>4️⃣ Overhead Dumbbell Tricep Extension</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-seated-triceps-extension.jpg" alt="Overhead Dumbbell Tricep Extension">
+                <p>Sets: 2 | Reps: 10-15<br>
+                Great for stretch. Hits long-head deeply. Amazing finishing movement</p>
+            </div>
+        </div>
+
+        <!-- Tuesday Content -->
+        <div id="tuesday" class="workout-content">
+            <h2>Tuesday - Back + Biceps (Pull Focus)</h2>
+            <h3>🔥BACK EXERCISES</h3>
+            <div class="card">
+                <h3>1️⃣ Lat Pulldown / Pull-Ups</h3>
+                <img src="https://kinxlearning.com/cdn/shop/files/exercise-33_1000x.jpg?v=1613518612" alt="Lat Pulldown Pull-Ups">
+                <p>Sets: 4 | Reps: 8-12<br>
+                Main exercise for wide back (V-shape). Hits lats directly. Pull-ups are best, lat pulldown second best</p>
+            </div>
+            <div class="card">
+                <h3>2️⃣ One-Arm Dumbbell Row</h3>
+                <img src="https://www.gofitnessplan.com/images/exercises/mixed/one-arm-dumbbell-row-bench.jpg" alt="One-Arm Dumbbell Row">
+                <p>Sets: 3 | Reps: 10-12<br>
+                Amazing stretch and squeeze. Helps fix muscle imbalance</p>
+            </div>
+            <div class="card">
+                <h3>3️⃣ Barbell Rows / T-Bar Rows</h3>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/pendlay-row-64ccd21a6f008.jpg?resize=980:*" alt="Barbell Rows T-Bar Rows">
+                <p>Sets: 3 | Reps: 8-12<br>
+                Adds thickness to the back. Builds mid-back density. Great for mass gain</p>
+            </div>
+            <div class="card">
+                <h3>4️⃣ Seated Cable Row</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/cable-seated-wide-grip-row.jpg" alt="Seated Cable Row">
+                <p>Sets: 3 | Reps: 10-12<br>
+                Constant tension. Improves back shape & muscle separation</p>
+            </div>
+            <h3>💥BICEPS EXERCISES</h3>
+            <div class="card">
+                <h3>1️⃣ Barbell Curl</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/ez-barbell-curl.jpg" alt="Barbell Curl">
+                <p>Sets: 3 | Reps: 8-12<br>
+                Best for overall size. You can go heavy. Straightforward mass builder</p>
+            </div>
+            <div class="card">
+                <h3>2️⃣ Dumbbell Hammer Curl</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-hammer-curl.jpg" alt="Dumbbell Hammer Curl">
+                <p>Sets: 3 | Reps: 10-12<br>
+                Builds forearms + brachialis. Makes arms look wider and thicker</p>
+            </div>
+            <div class="card">
+                <h3>3️⃣ Alternating Dumbbell Curl</h3>
+                <img src="https://i.pinimg.com/474x/df/7a/58/df7a5823bdc7ef794e50c154a34edd0c.jpg" alt="Alternating Dumbbell Curl">
+                <p>Sets: 2 | Reps: 10-12 each arm<br>
+                Better range of motion. More peak activation</p>
+            </div>
+            <div class="card">
+                <h3>4️⃣ Preacher Curl (Machine or bench)</h3>
+                <img src="https://www.kettlebellkings.com/cdn/shop/articles/Preacher_Curl_Alternatives.png?v=1731324163" alt="Preacher Curl">
+                <p>Sets: 2 | Reps: 10-12<br>
+                Gives round shape & clean peak. Kills cheating → pure muscle work</p>
+            </div>
+        </div>
+
+        <!-- Wednesday Content -->
+        <div id="wednesday" class="workout-content">
+            <h2>Wednesday - Shoulders + Abs</h2>
+            <h3>🔥SHOULDER EXERCISES</h3>
+            <div class="card">
+                <h3>1️⃣ Shoulder Press (Dumbbell or Machine)</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/lever-seated-shoulder-press.jpg" alt="Shoulder Press">
+                <p>Sets: 4 | Reps: 8-12<br>
+                Main strength builder. Targets overall shoulders. Most important shoulder exercise</p>
+            </div>
+            <div class="card">
+                <h3>2️⃣ Lateral Raises</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-seated-lateral-raise.jpg" alt="Lateral Raises">
+                <p>Sets: 4 | Reps: 12-15<br>
+                Builds side delts → gives wide shoulders. Very important for that "V" shape</p>
+            </div>
+            <div class="card">
+                <h3>3️⃣ Rear Delt Fly (Reverse Fly)</h3>
+                <img src="https://blog.myarsenalstrength.com/hs-fs/hubfs/whats-the-difference-between-this-2-machines-v0-byykr96toe9a1.jpg.webp" alt="Rear Delt Fly">
+                <p>Sets: 3 | Reps: 12-15<br>
+                Targets back side of shoulders. Fixes posture. Makes shoulders look fuller from all angles</p>
+            </div>
+            <div class="card">
+                <h3>4️⃣ Front Raises</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/weighted-front-raise.jpg" alt="Front Raises">
+                <p>Sets: 2 | Reps: 12-15<br>
+                Builds front delts. Helps with pushing strength. Good for shape</p>
+            </div>
+            <div class="card">
+                <h3>5️⃣ Shrugs</h3>
+                <img src="https://cdn.shopify.com/s/files/1/0547/0486/5477/files/dumbbell-shrug-steps-1536x1153.png?v=1701426808" alt="Shrugs">
+                <p>Sets: 2 | Reps: 12-15<br>
+                Builds traps. Adds thickness near neck. Powerful for upper back look</p>
+            </div>
+            <h3>🛡️ABS EXERCISES</h3>
+            <div class="card">
+                <h3>1️⃣ Crunches</h3>
+                <img src="https://www.fitundattraktiv.de/wp-content/uploads/2017/06/crunches-bauchpresse.jpg" alt="Crunches">
+                <p>Sets: 3 | Reps: 15-20<br>
+                Hits upper abs. Perfect starter</p>
+            </div>
+            <div class="card">
+                <h3>2️⃣ Leg Raises</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/lying-leg-raise.jpg" alt="Leg Raises">
+                <p>Sets: 3 | Reps: 12-15<br>
+                Best for lower abs. Gives clean 6-pack shape</p>
+            </div>
+            <div class="card">
+                <h3>3️⃣ Plank</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/front-plank.jpg" alt="Plank">
+                <p>Sets: 1 | Duration: 45-60 sec<br>
+                Strengthens core. Helps in all lifts</p>
+            </div>
+            <div class="card">
+                <h3>4️⃣ Russian Twists</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/russian-twist.jpg" alt="Russian Twists">
+                <p>Sets: 2 | Reps: 15-20 each side<br>
+                Builds obliques (side abs). Improves waist control</p>
+            </div>
+        </div>
+
+        <!-- Thursday Content -->
+        <div id="thursday" class="workout-content">
+            <h2>Thursday - Full Body Strength (Light–Moderate)</h2>
+            <h3>🏋️‍♂️FULL BODY STRENGTH EXERCISES</h3>
+            <div class="card">
+                <h3>1️⃣ Push-Ups</h3>
+                <img src="https://kinxlearning.com/cdn/shop/files/Pushup_1400x.jpg?v=1705765225" alt="Push-Ups">
+                <p>Sets: 3 | Reps: 15-20<br>
+                Chest + shoulders + triceps. Great warm-up + pump</p>
+            </div>
+            <div class="card">
+                <h3>2️⃣ Pull-Ups</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/pull-up.jpg" alt="Pull-Ups">
+                <p>Sets: 3 | Reps: 6-10<br>
+                Works lats + upper back. Light weight only (50–60%)</p>
+            </div>
+            <div class="card">
+                <h3>3️⃣ Dumbbell Shoulder Press</h3>
+                <img src="https://i.pinimg.com/736x/7c/e7/50/7ce75061eeb5031025dd849ab86dfdc2.jpg" alt="Dumbbell Shoulder Press">
+                <p>Sets: 2 | Reps: 10-12<br>
+                Just enough to activate shoulders. Don't go heavy on this day</p>
+            </div>
+            <div class="card">
+                <h3>4️⃣ Seated Cable Row</h3>
+                <img src="https://www.mybodycreator.com/content/files/2023/05/25/403_M.png" alt="Seated Cable Row">
+                <p>Sets: 2 | Reps: 10-12<br>
+                Activates middle back. Helps posture</p>
+            </div>
+            <div class="card">
+                <h3>5️⃣ Dumbbell Curl</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCd7w1-Md9pdAH7yRhGYy388OcqxGe7657_Q&s" alt="Dumbbell Curl">
+                <p>Sets: 2 | Reps: 10-12<br>
+                Light biceps pump. Don't overtrain arms today</p>
+            </div>
+            <div class="card">
+                <h3>6️⃣ Tricep Rope Pushdown</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/cable-pushdown.jpg" alt="Tricep Rope Pushdown">
+                <p>Sets: 2 | Reps: 12-15<br>
+                Just activation, not full load</p>
+            </div>
+            <div class="card">
+                <h3>7️⃣ Bodyweight Squats</h3>
+                <img src="https://www.burnthefatinnercircle.com/members/images/1700c.png?cb=20250701051148" alt="Bodyweight Squats">
+                <p>Sets: 3 | Reps: 15-20<br>
+                Improves mobility. Light burn only</p>
+            </div>
+            <div class="card">
+                <h3>8️⃣ Leg Press (light)</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/lever-seated-leg-press.jpg" alt="Leg Press light">
+                <p>Sets: 2 | Reps: 12-15<br>
+                40–50% weight. Give blood flow to legs</p>
+            </div>
+            <div class="card">
+                <h3>9️⃣ Calf Raises</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-standing-calf-raise.jpg" alt="Calf Raises">
+                <p>Sets: 2 | Reps: 15-20<br>
+                Easy and effective</p>
+            </div>
+        </div>
+
+        <!-- Friday Content -->
+        <div id="friday" class="workout-content">
+            <h2>Friday - Special Upper Body Day</h2>
+            <h3>🔥 BEST UPPER BODY EXERCISES</h3>
+            <div class="card">
+                <h3>1️⃣ Incline Dumbbell Press</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-incline-hammer-press.jpg" alt="Incline Dumbbell Press">
+                <p>Sets: 3 | Reps: 10-12<br>
+                Best for upper chest. Helps your chest look bigger from the top</p>
+            </div>
+            <div class="card">
+                <h3>2️⃣ Weighted Dips / Normal Dips</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/weighted-tricep-dips.jpg" alt="Weighted Dips Normal Dips">
+                <p>Sets: 3 | Reps: 8-12<br>
+                Killer for mid-lower chest. Also hits triceps strongly</p>
+            </div>
+            <div class="card">
+                <h3>3️⃣ T-Bar Row</h3>
+                <img src="https://images.squarespace-cdn.com/content/v1/5ffcea9416aee143500ea103/1638352828989-47U5HIIXG66HCZEYTG73/T-Bar%2BRows.jpeg" alt="T-Bar Row">
+                <p>Sets: 3 | Reps: 8-12<br>
+                Adds mid-back thickness. Makes your back look fuller</p>
+            </div>
+            <div class="card">
+                <h3>4️⃣ Lat Pulldown (Wide Grip)</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/cable-wide-grip-lat-pulldown.jpg" alt="Lat Pulldown Wide Grip">
+                <p>Sets: 3 | Reps: 10-12<br>
+                Gives width + V-shape. Don't go too heavy</p>
+            </div>
+            <div class="card">
+                <h3>5️⃣ Lateral Raises</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-seated-lateral-raise.jpg" alt="Lateral Raises">
+                <p>Sets: 4 | Reps: 12-15<br>
+                Most important for side width. Light weight, high reps = best pump</p>
+            </div>
+            <div class="card">
+                <h3>6️⃣ Rear Delt Fly</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-rear-delt-fly.jpg" alt="Rear Delt Fly">
+                <p>Sets: 2 | Reps: 12-15<br>
+                Gives round shoulder appearance. Fixes posture</p>
+            </div>
+            <div class="card">
+                <h3>7️⃣ Preacher Curl</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-seated-preacher-curl.jpg" alt="Preacher Curl">
+                <p>Sets: 3 | Reps: 10-12<br>
+                Pure squeeze → biceps shape increases a lot</p>
+            </div>
+            <div class="card">
+                <h3>8️⃣ Tricep Rope Extension</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/cable-pushdown.jpg" alt="Tricep Rope Extension">
+                <p>Sets: 3 | Reps: 12-15<br>
+                Good pump. Safe & effective for long-head triceps</p>
+            </div>
+        </div>
+
+        <!-- Saturday Content -->
+        <div id="saturday" class="workout-content">
+            <h2>Saturday - Legs</h2>
+            <h3>🦵LEG EXERCISES</h3>
+            <div class="card">
+                <h3>1️⃣ Squats (King of Leg Exercises)</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6Je6VHFs8FzdiJasepV0fRmAbFSg7smM_DVEbDmuCqRkhmQtIauS1SRYlzIToE9u-whM&usqp=CAU" alt="Squats">
+                <p>Sets: 4 | Reps: 8-12<br>
+                Builds quads, hamstrings, glutes. Increases overall strength. Best muscle-builder for legs</p>
+            </div>
+            <div class="card">
+                <h3>2️⃣ Leg Press</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/lever-seated-leg-press.jpg" alt="Leg Press">
+                <p>Sets: 4 | Reps: 10-15<br>
+                Safely go heavy. Great for quad size. Adds thickness to legs</p>
+            </div>
+            <div class="card">
+                <h3>3️⃣ Leg Extension</h3>
+                <img src="https://kinxlearning.com/cdn/shop/files/shutterstock_425324797_1400x.jpg?v=1689195524" alt="Leg Extension">
+                <p>Sets: 3 | Reps: 12-15<br>
+                Isolates quads. Gives that front-thigh "cut". Perfect as a warm-up or finisher</p>
+            </div>
+            <div class="card">
+                <h3>4️⃣ Hamstring Curl (Seated or Lying)</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/lever-lying-leg-curl.jpg" alt="Hamstring Curl">
+                <p>Sets: 3 | Reps: 10-12<br>
+                Builds back thigh (very important). Makes legs look balanced. Prevents injuries</p>
+            </div>
+            <div class="card">
+                <h3>5️⃣ Lunges / Walking Lunges</h3>
+                <img src="https://modusx.de/wp-content/uploads/standard-lunges-1080x608.jpg" alt="Lunges Walking Lunges">
+                <p>Sets: 2 | Reps: 10-12 each leg<br>
+                Very powerful for glutes + hamstrings. Increases stability and strength. Improves leg shape</p>
+            </div>
+            <div class="card">
+                <h3>6️⃣ Standing or Seated Calf Raises</h3>
+                <img src="https://liftmanual.com/wp-content/uploads/2023/04/weighted-seated-calf-raise.jpg" alt="Calf Raises">
+                <p>Sets: 3 | Reps: 15-20<br>
+                Builds calves. Helps knee stability. Makes legs look complete</p>
+            </div>
+        </div>
+
+        <!-- Sunday Content -->
+        <div id="sunday" class="workout-content">
+            <h2>Sunday - Rest Day</h2>
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/view-man-practicing-mindfulness-yoga-fantasy-setting_23-2151416410.jpg?semt=ais_hybrid&w=740&q=80" alt="Rest Day">
+                <p>Complete rest and recovery with light yoga and meditation. Muscle grows during rest, not during gym.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>made with <span class="heart">&#10084;</span> for you by <a href="https://www.instagram.com/_vipul_3132_/">Vipul Patil</a></p>
+        <p>&copy; 2025-26 V-GyM. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showDay(day, button) {
+            // Remove active class from all tabs and content
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.workout-content').forEach(content => content.classList.remove('active'));
+            
+            // Add active class to clicked button and corresponding content
+            button.classList.add('active');
+            document.getElementById(day).classList.add('active');
+        }
+    </script>
+<script>
+function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+</script>
+
+</body>
+</html>

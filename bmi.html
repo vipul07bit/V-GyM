@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness Calculator</title>
+
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+<nav>
+    <img src="./img/l.png" alt="V-GyM Logo" width="120px">
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="bmi.html">BMI Calculator</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="about.html">About Us</a>
+    </div>
+</nav>
+
+
+    <div class="container">
+        <h1>💪 GYM FITNESS CALCULATOR</h1>
+        <p class="subtitle">Track Your Health & Fitness Metrics</p>
+
+        <div class="input-group">
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="age">Age (years)</label>
+            <input type="number" id="age" placeholder="Enter your age" min="1" max="120">
+        </div>
+
+        <div class="input-group">
+            <label for="height">Height (cm)</label>
+            <input type="number" id="height" placeholder="Enter your height in cm" min="50" max="250">
+        </div>
+
+        <div class="input-group">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" placeholder="Enter your weight in kg" min="20" max="300">
+        </div>
+
+        <div class="input-group">
+            <label for="activity">Activity Level</label>
+            <select id="activity">
+                <option value="1.2">Sedentary (Little/No Exercise)</option>
+                <option value="1.375">Lightly Active (1-3 days/week)</option>
+                <option value="1.55">Moderately Active (3-5 days/week)</option>
+                <option value="1.725">Very Active (6-7 days/week)</option>
+                <option value="1.9">Extremely Active (Athlete)</option>
+            </select>
+        </div>
+
+        <button class="btn" onclick="calculateAll()">Calculate My Fitness</button>
+
+        <div class="result-section" id="results">
+            <div class="bmi-category" id="category"></div>
+            <div class="bmi-value" id="bmiValue"></div>
+            
+            <div class="bmi-strip">
+                <div class="bmi-indicator" id="indicator"></div>
+            </div>
+            <div class="bmi-labels">
+                <span>Underweight<br>&lt;18.5</span>
+                <span>Normal<br>18.5-24.9</span>
+                <span>Overweight<br>25-29.9</span>
+                <span>Obese<br>&gt;30</span>
+            </div>
+
+            <div class="additional-info">
+                <div class="info-card">
+                    <h3>💧 Daily Water</h3>
+                    <div class="value" id="waterValue"></div>
+                    <div class="unit">Liters per day</div>
+                </div>
+                <div class="info-card">
+                    <h3>🔥 Daily Calories</h3>
+                    <div class="value" id="caloriesValue"></div>
+                    <div class="unit">kcal per day</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function calculateAll() {
+            // Get input values
+            const gender = document.getElementById('gender').value;
+            const age = parseFloat(document.getElementById('age').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+            const activity = parseFloat(document.getElementById('activity').value);
+
+            // Validation
+            if (!age || !height || !weight) {
+                alert('Please fill in all fields!');
+                return;
+            }
+
+            if (height < 50 || height > 250) {
+                alert('Please enter a valid height between 50-250 cm');
+                return;
+            }
+
+            if (weight < 20 || weight > 150) {
+                alert('Please enter a valid weight between 20-150 kg');
+                return;
+            }
+
+            // Calculate BMI
+            const heightInMeters = height / 100;
+            const bmi = (weight / (heightInMeters * heightInMeters)).toFixed(1);
+
+            // Determine BMI Category and Color
+            let category, color;
+            if (bmi < 18.5) {
+                category = '⚠️ Underweight';
+                color = '#4a90e2';
+            } else if (bmi >= 18.5 && bmi < 25) {
+                category = '✅ Normal Weight';
+                color = '#50c878';
+            } else if (bmi >= 25 && bmi < 30) {
+                category = '⚠️ Overweight';
+                color = '#ffa500';
+            } else {
+                category = '❌ Obese';
+                color = '#ff6b6b';
+            }
+
+            // Calculate Water Intake (Body weight x 0.03 liters)
+            const waterIntake = (weight * 0.03).toFixed(1);
+
+            // Calculate Calories using Mifflin-St Jeor Equation
+            let bmr;
+            if (gender === 'male') {
+                bmr = (10 * weight) + (6.25 * height) - (5 * age) + 5;
+            } else {
+                bmr = (10 * weight) + (6.25 * height) - (5 * age) - 161;
+            }
+            const dailyCalories = Math.round(bmr * activity);
+
+            // Display Results
+            document.getElementById('bmiValue').textContent = bmi;
+            document.getElementById('category').textContent = category;
+            document.getElementById('category').style.color = color;
+            document.getElementById('waterValue').textContent = waterIntake;
+            document.getElementById('caloriesValue').textContent = dailyCalories.toLocaleString();
+
+            // Position BMI Indicator
+            const minBMI = 15;
+            const maxBMI = 40;
+            let position = ((bmi - minBMI) / (maxBMI - minBMI)) * 100;
+            position = Math.max(0, Math.min(100, position));
+            document.getElementById('indicator').style.left = position + '%';
+
+            // Show Results
+            document.getElementById('results').classList.add('show');
+        }
+
+        // Allow Enter key to calculate
+        document.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                calculateAll();
+            }
+        });
+    </script>
+<script>
+function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+</script>
+</body>
+</html>

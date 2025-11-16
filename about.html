@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About V-GyM</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-image: url(./img/3.png);
+            background-size: cover;
+            padding-top: 120px;
+        }
+        .content{
+            background-color: rgba(240, 248, 255, 0.35);
+            border: double 4px whitesmoke;
+            border-radius: 10px;
+            padding: 32px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+}
+    </style>
+</head>
+<body>
+<nav>
+    <img src="./img/l.png" alt="V-GyM Logo" width="120px">
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="bmi.html">BMI Calculator</a>
+        <a href="workouts.html">Workouts</a>
+        <a href="about.html">About Us</a>
+    </div>
+</nav>
+
+
+<div class="content">
+    <h1>About V-GyM</h1>
+    <p>Welcome to V-GyM, your go-to platform for personalized workout plans and fitness guidance. Our mission is to help you achieve your fitness goals through tailored workout routines and expert advice.</p>
+    <p>At V-GyM, we believe in a holistic approach to fitness. Whether you're a beginner or an experienced athlete, we have something for everyone. Our motive is provide you a infomation of excersise and diet by motivating you.</p>
+    <p>Join us on this fitness journey and take the first step towards a healthier, happier you!</p>
+    <p>Please note we are not medical professionals or certified dietitians.
+     The workout and nutrition guidance on this site is generalized for specific
+     body types and is not a personalized medical plan. Follow any suggestions at your own risk and
+     consult a qualified physician or registered dietitian before starting any new exercise or diet program.</p>
+    <p>Some images used here are created by us; others are sourced from websites such as Freepik, Pixabay, etc. If you 
+     have any concerns about images or content, please contact us.<br> All content is provided for educational purposes only.</p>
+</div>
+<script>
+function toggleMenu() {
+    const nav = document.getElementById("navLinks");
+    nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+}
+</script>
+
+</body>
+</html>
